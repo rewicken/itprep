@@ -12,7 +12,10 @@
 <link href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet type=text/css>
 <link href=dist/owl.carousel.css rel=stylesheet type=text/css>
 <link href=dist/owl.theme.css rel=stylesheet type=text/css>
+<link href="dist/jquery.justified.css" rel="stylesheet">
 <script src=https://code.jquery.com/jquery-1.12.4.min.js integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=anonymous></script>
+<script src="dist/typed.js"></script>
+<script src="dist/jquery.justified.js"></script>
 <script src=dist/owl.carousel.min.js></script>
 <script src=dist/scrollreveal.min.js></script>
 <script src=https://cdnjs.cloudflare.com/ajax/libs/jqcloud/1.0.4/jqcloud-1.0.4.min.js></script>
@@ -37,6 +40,9 @@
 <div class=hero>
 <img src=dist/logo-winter-resized.jpg style=border-radius:50%;width:6vw;top:1vw;right:1.1vw;position:relative>
 <h1 class=title>iT 少年宫</h1>
+<p class="typing-wrap">
+想学什么：<span class="typing-container"></span>
+</p>
 <div class="intro mass-font" style=height:20vw>
 </div>
 <div class=github>
@@ -46,37 +52,65 @@
 </div>
 <div class=demo>
 <div class=column>
-<div class="block red seq-1" tabindex=0 data-trigger=focus data-toggle=popover title="网页编程 课程介绍" data-content="<p><b>课时：</b>32小时</p><p>注册，管理网址学完课程后可独立编程，并设计网站。将想法用代码写出来。建立云服务器，数据的备份与存储、网站托管服务。</p>" data-html=true>网页编程</div>
+<div class="block red seq-1 circle-1">网页编程</div>
 </div>
 <div class=column>
-<div class="block orange seq-1" tabindex=1 data-trigger=focus data-toggle=popover title="JAVA 课程介绍" data-content="<p><b>课程：</b>32小时</p><p>Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</p>" data-html=true>JAVA</div>
+<div class="block orange seq-1 circle-2">JAVA</div>
 </div>
 <div class=column>
-<div class="block yellow seq-1" tabindex=2 data-trigger=focus data-toggle=popover title="Python 课程介绍" data-content="<p><b>课时：</b>32小时</p><p>Python是一种开放源代码的脚本编程语言，这种脚本语言特别强调开发速度和代码的清晰速度。它可以用来开发各种程序，从简单的脚本人物到复杂的，面向对象的应用程序都有大显身手的地方。</p>" data-html=true>Python</div>
+<div class="block yellow seq-1 circle-3">Python</div>
 </div>
 <div class=column>
-<div class="block green seq-1" tabindex=3 data-trigger=focus data-toggle=popover title="C++ 课程介绍" data-placement=left data-content="<p><b>课时：</b>32小时</p><p>C++是C语言的继承，它既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计.</p>" data-html=true>C++</div>
+<div class="block green seq-1 circle-4">C++</div>
 </div>
 <div class=column>
-<div class="block blue seq-1" tabindex=4 data-trigger=focus data-toggle=popover title="Photoshop 课程介绍" data-placement=left data-content="<p><b>课时：</b>32小时</p><p>学习是目前公认的最好的通用平面美术设计软件，它的功能完善，性能稳定，使用方便，所以几乎在所有的广告 出版软件公司，Photoshop都是首选的平面工具。</p>" data-html=true>Photoshop</div>
+<div class="block blue seq-1 circle-5">Photoshop</div>
 </div>
+</div>
+<div class="collapse circle-des circle-1-des">
+	<p><b>课程：32小时</b></p>
+	<p>注册，管理网址学完课程后可独立编程，并设计网站。将想法用代码写出来。建立云服务器，数据的备份与存储、网站托管服务。</p>
+</div>
+<div class="collapse circle-des circle-2-des">
+	<p><b>课程：32小时</b></p>
+	<p>Java是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程</p>	
+</div>
+<div class="collapse circle-des circle-3-des">
+	<p><b>课时：32小时</b></p>
+	<p>Python是一种开放源代码的脚本编程语言，这种脚本语言特别强调开发速度和代码的清晰速度。它可以用来开发各种程序，从简单的脚本人物到复杂的，面向对象的应用程序都有大显身手的地方。</p>	
+</div>
+<div class="collapse circle-des circle-4-des">
+	<p><b>课时：32小时</b></p>
+	<p>C++是C语言的继承，它既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计.</p>	
+</div>
+<div class="collapse circle-des circle-5-des">
+	<p><b>课时：32小时</b></p>
+	<p>学习是目前公认的最好的通用平面美术设计软件，它的功能完善，性能稳定，使用方便，所以几乎在所有的广告 出版软件公司，Photoshop都是首选的平面工具。</p>	
 </div>
 <div class=demo>
 <div class=column>
-<div class="block orange seq-1" tabindex=5 data-trigger=focus data-toggle=popover title=微信公开课介绍 data-content="<p><b>课程：</b>12+1小时</p><p>学习如何了解公众号的基本信息介绍，以及个人公众号的定位。更好的了解市场的需求，坐到最好的抓住眼球。整个模板的规划以及策划达到更高效果的展示。</p>" data-html=true>微信公开课</div>
+<div class="block orange seq-1 circle-6">微信公开课</div>
 </div>
 <div class=column>
-<div class="block purple seq-1" tabindex=6 data-trigger=focus data-toggle=popover title="iOS 编程" data-content="<p><b>课程：</b>32小时</p><p>学习编写苹果软件的编程语言，了解一个手机APP是如何编写，设计，上线的。学成后可独立编写简单，实用的手机APP软件并放进App Store让全世界下载使用。</p>" data-html=true>iOS 编程</div>
+<div class="block purple seq-1 circle-7">iOS 编程</div>
 </div>
 <div class=column>
-<div class="block blue seq-1" tabindex=7 data-trigger=focus data-toggle=popover title="GRE 课程介绍" data-content=敬请期待>GRE</div>
+<div class="block blue seq-1">GRE</div>
 </div>
 <div class=column>
-<div class="block yellow seq-1" tabindex=8 data-trigger=focus data-toggle=popover data-placement=left title="GMAT 课程介绍" data-content=敬请期待>GMAT</div>
+<div class="block yellow seq-1">GMAT</div>
 </div>
 <div class=column>
-<div class="block red seq-1" tabindex=9 data-trigger=focus data-toggle=popover data-placement=left title="AutoCAD 课程介绍" data-content=敬请期待>AutoCAD</div>
+<div class="block red seq-1">AutoCAD</div>
 </div>
+</div>
+<div class="collapse circle-des circle-6-des">
+	<p><b>课程：12+1小时</b></p>
+	<p>学习如何了解公众号的基本信息介绍，以及个人公众号的定位。更好的了解市场的需求，坐到最好的抓住眼球。整个模板的规划以及策划达到更高效果的展示。</p>
+</div>
+<div class="collapse circle-des circle-7-des">
+	<p><b>课程：32小时</b></p>
+	<p>学习编写苹果软件的编程语言，了解一个手机APP是如何编写，设计，上线的。学成后可独立编写简单，实用的手机APP软件并放进App Store让全世界下载使用。</p>	
 </div>
 <div class=github>
 <div class=stars style=margin-bottom:50px;font-size:1.5em>
@@ -91,7 +125,42 @@
 <div class=item><h1>6</h1></div>
 <div class=item><h1>7</h1></div>
 </div>
-<div style=margin-top:3vw;background-image:url(http://az616578.vo.msecnd.net/files/2016/08/18/6360713811509456361703121913_teaching.jpg);height:22vw;width:100%;background-size:cover;background-attachment:fixed></div>
+<div class=github>
+<div class=stars style=margin-bottom:50px;font-size:1.5em>
+图片墙</div>
+</div>
+<div id="mygallery">
+	<a href="http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg">
+		<img src="http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/cool-background.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/colorful-triangles-background_yB0qTG6.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/Light-Wood-Background-Wallpaper_JHG6qot.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/rainbow_texture679.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/violet-vector-leaves-circles-backgrounds-for-powerpoint_PdfkI4q.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/518079-background-hd_Tv150Mi.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.intrawallpaper.com/static/images/4238072-background.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg" />
+	</a>
+	<a href="#">
+		<img src="http://www.planwallpaper.com/static/images/recycled_texture_background_by_sandeep_m-d6aeau9_PZ9chud.jpg" />
+	</a>
+</div>
 <div class=contact style="padding:0 20px">
 <div class=code-pic>
 <img style=width:100% src="http://open.weixin.qq.com/qr/code/?username=techprep" /><br>
@@ -111,7 +180,66 @@
 </svg><span class=omega>of <a href=#>Adam</a></span>
 </div>
 <script>var hero={origin:"top",distance:"24px",duration:1500,scale:1.05};var intro={origin:"bottom",distance:"64px",duration:900,delay:1500,scale:1};var github={origin:"top",distance:"32px",duration:600,delay:1800,scale:0};sr.reveal(".demo .block",{reset:true,viewOffset:{top:64}});sr.reveal(".hero",hero);sr.reveal(".intro",intro);sr.reveal(".hero .github",github);sr.reveal(".seq-1",200);function addCommasToNum(a){return a.toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}</script>
-<script>var crown=document.querySelector(".crown");var demo=document.querySelector(".demo");window.addEventListener("scroll",scrollBrain,false);var body=document.body,html=document.documentElement;var height=Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight);function scrollBrain(){if(window.pageYOffset>=demo.offsetTop+64){return crown.classList.add("visible")}if(crown.classList.contains("visible")){return crown.classList.remove("visible")}if(window.pageYOffset>=0.85*(height-window.clientHeight)){_gaq.push(["_trackEvent","Behavior","Scroll","Viewed the entire page."])}}var words=[{text:"HTML",weight:13},{text:"CSS",weight:10.5},{text:"Javascript",weight:9.4},{text:"JAVA",weight:8},{text:"Python",weight:6.2},{text:"C++",weight:10},{text:"Bootstrap",weight:5},{text:"SASS",weight:7},{text:"Node.js",weight:15},{text:"React.js",weight:6},{text:"Angular.js",weight:9},{text:"Backbone.js",weight:7.5},{text:"GIT",weight:10.5},{text:"Webpack",weight:8.4},{text:"Gulp",weight:9.2},{text:"Bash",weight:12.2},{text:"Linux",weight:11.1},{text:"Mysql",weight:10},{text:"Express",weight:9},{text:"MongoDB",weight:8},{text:"jQuery",weight:7.9},{text:"Ember.js",weight:6},{text:"D3.js",weight:14},{text:"Vue.js",weight:13},{text:"Vim",weight:12.9},{text:"Babel",weight:14},{text:"Grunt",weight:12.1},{text:"Browserify",weight:6},{text:"Bower",weight:8},{text:"Mobx",weight:9},{text:"Flux",weight:8.7},{text:"Redux",weight:9.4},{text:"Mocha",weight:6.7},{text:"Jasmine",weight:7.5},{text:"django",weight:8},{text:"Ruby",weight:7.3},{text:"PHP",weight:6.9},{text:"Rust",weight:5.9},{text:"C#",weight:9},{text:"GoLang",weight:10.4},{text:"Nginx",weight:11.5},{text:"Apache",weight:12},{text:"Heroku",weight:12.2},{text:"Docker",weight:13},{text:"Jenkins",weight:11}];$(".hero").jQCloud(words,{shape:"elliptic",autoResize:true});$(function(){$('[data-toggle="popover"]').popover()});$(document).ready(function(){var a=$("#owl-demo");a.owlCarousel({itemsCustom:[[0,2],[450,4],[600,4],[700,4],[1000,4],[1200,4],[1400,4],[1600,4]],navigation:false,pagination:false,autoPlay:true})});</script>
-<style>#owl-demo .item{background:#42bdc2;padding:30px 0;margin:5px;color:#FFF;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center}.hero .title{margin:18vw 0 28px!important;z-index:999;position:relative;font-size:5.6vw}.demo{height:17vw!important}.column .block{border-radius:8vw;visibility:visible;-webkit-transform:scale(1);opacity:1;transform:scale(1);opacity:1;-webkit-transition:-webkit-transform .8s cubic-bezier(0.6,0.2,0.1,1) 0s,opacity .8s cubic-bezier(0.6,0.2,0.1,1) 0s;transition:transform .8s cubic-bezier(0.6,0.2,0.1,1) 0s,opacity .8s cubic-bezier(0.6,0.2,0.1,1) 0s;line-height:15vw;color:#000!important;font-size:2vw}.column .block:hover{cursor:pointer}.column .block:after,.column .block:before{height:15vw;border-radius:8vw}.hero{padding:0}.mass-font span{position:relative;display:inline-block}.github .stars{border-right:1px solid #2d3443;border-radius:4px}.contact{line-height:1.5em;margin-top:4vw}div.jqcloud span{font-family:'Fredericka the Great',cursive;opacity:.1;padding:1vw}.code-pic{float:left;width:23.5%}.address-map{float:right;width:72%;height:22.5vw}@media only screen and (max-width:768px){.code-pic{width:100%}.address-map{width:100%}}.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:normal;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto;color:#787878!important}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{content:"";border-width:10px}.popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}.popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}.popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}.popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25)}.popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}.popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";border-right-width:0;border-left-color:#fff}</style>
+<script>var crown=document.querySelector(".crown");var demo=document.querySelector(".demo");window.addEventListener("scroll",scrollBrain,false);var body=document.body,html=document.documentElement;var height=Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight);function scrollBrain(){if(window.pageYOffset>=demo.offsetTop+64){return crown.classList.add("visible")}if(crown.classList.contains("visible")){return crown.classList.remove("visible")}if(window.pageYOffset>=0.85*(height-window.clientHeight)){_gaq.push(["_trackEvent","Behavior","Scroll","Viewed the entire page."])}}var words=[{text:"HTML",weight:13},{text:"CSS",weight:10.5},{text:"Javascript",weight:9.4},{text:"JAVA",weight:8},{text:"Python",weight:6.2},{text:"C++",weight:10},{text:"Bootstrap",weight:5},{text:"SASS",weight:7},{text:"Node.js",weight:15},{text:"React.js",weight:6},{text:"Angular.js",weight:9},{text:"Backbone.js",weight:7.5},{text:"GIT",weight:10.5},{text:"Webpack",weight:8.4},{text:"Gulp",weight:9.2},{text:"Bash",weight:12.2},{text:"Linux",weight:11.1},{text:"Mysql",weight:10},{text:"Express",weight:9},{text:"MongoDB",weight:8},{text:"jQuery",weight:7.9},{text:"Ember.js",weight:6},{text:"D3.js",weight:14},{text:"Vue.js",weight:13},{text:"Vim",weight:12.9},{text:"Babel",weight:14},{text:"Grunt",weight:12.1},{text:"Browserify",weight:6},{text:"Bower",weight:8},{text:"Mobx",weight:9},{text:"Flux",weight:8.7},{text:"Redux",weight:9.4},{text:"Mocha",weight:6.7},{text:"Jasmine",weight:7.5},{text:"django",weight:8},{text:"Ruby",weight:7.3},{text:"PHP",weight:6.9},{text:"Rust",weight:5.9},{text:"C#",weight:9},{text:"GoLang",weight:10.4},{text:"Nginx",weight:11.5},{text:"Apache",weight:12},{text:"Heroku",weight:12.2},{text:"Docker",weight:13},{text:"Jenkins",weight:11}];$(".hero").jQCloud(words,{shape:"elliptic",autoResize:true});$(function(){$('[data-toggle="popover"]').popover()});$(document).ready(function(){var a=$("#owl-demo");a.owlCarousel({itemsCustom:[[0,2],[450,4],[600,4],[700,4],[1000,4],[1200,4],[1400,4],[1600,4]],navigation:false,pagination:false,autoPlay:true,autoplayHoverPause:true})});$("#mygallery").justifiedGallery({lastRow : 'justify'});
+$(document).ready(function() {	
+	$('.circle-1').click(function (){
+		$('.circle-1-des').slideToggle();
+		$('.circle-1-des').siblings('.collapse').slideUp();
+	});
+	$('.circle-2').click(function (){
+		$('.circle-2-des').slideToggle();
+		$('.circle-2-des').siblings('.collapse').slideUp();
+	});
+	$('.circle-3').click(function (){
+		$('.circle-3-des').slideToggle();
+		$('.circle-3-des').siblings('.collapse').slideUp();
+	});
+	$('.circle-4').click(function (){
+		$('.circle-4-des').slideToggle();
+		$('.circle-4-des').siblings('.collapse').slideUp();
+	});
+	$('.circle-5').click(function (){
+		$('.circle-5-des').slideToggle();
+		$('.circle-5-des').siblings('.collapse').slideUp();
+	});
+	$('.circle-6').click(function (){
+		$('.circle-6-des').slideToggle();
+		$('.circle-6-des').siblings('.collapse').slideUp();
+	});
+	$('.circle-7').click(function (){
+		$('.circle-7-des').slideToggle();
+		$('.circle-7-des').siblings('.collapse').slideUp();
+	});
+});
+$(function(){
+	$(".typing-container").typed({
+		strings: ["网页编程", "Photoshop", "JAVA", "Python", "iOS 编程", "微信公开课"],
+		typeSpeed: 100,
+		loop: true,
+		backDelay: 1500
+	});
+});
+</script>
+<style>.collapse{display: none;}.collapse.in{display: block;}.collapsing {position: relative;height: 0;overflow: hidden;-webkit-transition-timing-function: ease;-o-transition-timing-function: ease;transition-timing-function: ease;-webkit-transition-duration: .35s;-o-transition-duration: .35s;transition-duration: .35s;-webkit-transition-property: height, visibility;-o-transition-property: height, visibility;transition-property: height, visibility;}#owl-demo .item{background:#42bdc2;padding:30px 0;margin:5px;color:#FFF;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;text-align:center}.hero .title{margin:18vw 0 28px!important;z-index:999;position:relative;font-size:5.6vw}.demo{height:17vw!important}.column .block{border-radius:8vw;visibility:visible;-webkit-transform:scale(1);opacity:1;transform:scale(1);opacity:1;-webkit-transition:-webkit-transform .8s cubic-bezier(0.6,0.2,0.1,1) 0s,opacity .8s cubic-bezier(0.6,0.2,0.1,1) 0s;transition:transform .8s cubic-bezier(0.6,0.2,0.1,1) 0s,opacity .8s cubic-bezier(0.6,0.2,0.1,1) 0s;line-height:15vw;color:#000!important;font-size:2vw}.column .block:hover{cursor:pointer}.column .block:after,.column .block:before{height:15vw;border-radius:8vw}.hero{padding:0}.mass-font span{position:relative;display:inline-block}.github .stars{border-right:1px solid #2d3443;border-radius:4px}.contact{line-height:1.5em;margin-top:4vw}div.jqcloud span{font-family:'Fredericka the Great',cursive;opacity:.1;padding:1vw}.code-pic{float:left;width:15.5%}.address-map{float:right;width:82%;height:15vw}@media only screen and (max-width:768px){.code-pic{width:100%}.address-map{width:100%}}.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;font-style:normal;font-weight:normal;line-height:1.42857143;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,.2);box-shadow:0 5px 10px rgba(0,0,0,.2);line-break:auto;color:#787878!important}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow{border-width:11px}.popover>.arrow:after{content:"";border-width:10px}.popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,.25);border-bottom-width:0}.popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,.25);border-left-width:0}.popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}.popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,.25)}.popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,.25)}.popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";border-right-width:0;border-left-color:#fff}.circle-des{border: 2px solid white; border-radius: 5px; padding: 2vw; margin: 2vw 4vw;}.circle-des p{line-height: 2vw;}#mygallery img {opacity: 0.5;} #mygallery img:hover {opacity: 1;}.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}.typing-wrap{font-size: 2vw; color: #59ACDE;}.typing-wrap .typing-container{color: white; border-bottom: 1px solid; padding: 3px; font-size: 1.8vw; opacity: 1!important;} .typed-cursor {padding: 2px!important;}</style>
 </body>
 </html>
